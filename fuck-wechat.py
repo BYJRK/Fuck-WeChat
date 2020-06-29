@@ -32,7 +32,8 @@ def remove_trash():
     print('=' * 30)
     print(f'总垃圾大小：{total_trash_size:.3f} MB')
 
-    user_input = input('是否清除？y(es)/n(o) > ')
+    print('请注意，以上垃圾包含所有下载（点开）过的图片、视频、文本文件，请谨慎删除！')
+    user_input = input('是否清除全部垃圾？y(es)/n(o) > ')
     if user_input.lower() not in ['y', 'yes']:
         return
 
